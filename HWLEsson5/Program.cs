@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 
 namespace HWLEsson5
 {
@@ -6,7 +7,7 @@ namespace HWLEsson5
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            File.WriteAllText(@"D:\startup.txt", DateTime.Now.ToString());
         }
     }
 }
